@@ -3,7 +3,7 @@
 
 <?php
 
-include 'sapadian/inc/Layout.php';
+include 'openrps_core/inc/Layout.php';
 
 $layout = new Layout();
 
@@ -23,7 +23,7 @@ $layout->showHeader($title);
 <form id='login' action='process_login.php' method='post'>
 
 <fieldset>
-  <legend>Log In to Altoona.co</legend>
+  <legend>Log In to OpenRPS</legend>
   <ul>
     <li class="field">
       <label class="inline" for="text1">Username</label>

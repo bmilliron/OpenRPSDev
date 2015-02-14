@@ -17,7 +17,6 @@ class Layout{
 
         echo'<body>';
 
-        echo '<a href="http://www.altoona.co"><img src="http://www.altoona.co/img/altoonaco_logo.png"></a>';
         echo'<br>';
         echo'<br>';
 
@@ -39,7 +38,6 @@ class Layout{
 
         echo'<body>';
 
-        echo '<a href="http://www.altoona.co"><img src="http://www.altoona.co/img/altoonaco_logo.png"></a>';
         echo'<br>';
         echo'<br>';
         
@@ -58,7 +56,7 @@ class Layout{
         echo '<br>';
         echo '<br>';
         echo '<br>';
-        echo 'Copyright © 2015 Altoona.co';
+        echo 'Copyright © OpenRPS';
         echo '</body>';
         echo '</html>';
         
