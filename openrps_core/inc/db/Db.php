@@ -5,7 +5,7 @@ class Db {
     
     public function connectTest(){
           
-    $db_conn_test = pg_connect("host=localhost port=5432 dbname=altoonacotest user=altoonacotest password=greed205");
+    $db_conn_test = pg_connect("host=localhost port=5432 dbname= user= password=");
     
     return $db_conn_test;
     
@@ -14,7 +14,7 @@ class Db {
     
     public function connectProd(){
           
-    $db_conn_test = pg_connect("host=localhost port=5432 dbname=altoonacoprod user=altoonacoprod password=!AltoonaRocks2014");
+    $db_conn_test = pg_connect("host=localhost port=5432 dbname= user= password=");
     
     return $db_conn_test;
     
