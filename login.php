@@ -3,7 +3,7 @@
 
 <?php
 
-include 'openrps_core/inc/Layout.php';
+include 'openrps_core/eng/helpers/Layout.php';
 
 $layout = new Layout();
 

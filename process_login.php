@@ -1,8 +1,8 @@
 <?php
 
-include_once 'openrps_core/inc/Layout.php';
-include_once 'openrps_core/inc/Register.php';
-include_once 'openrps_core/inc/db/Db.php';
+include_once 'openrps_core/eng/helpers/Layout.php';
+include_once 'openrps_core/eng/helpers/Register.php';
+include_once 'openrps_core/eng/dbc/Db.php';
 
 //Set post variables
 

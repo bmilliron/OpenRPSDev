@@ -3,8 +3,8 @@
 
 <?php
 
-include 'openrps_core/inc/Layout.php';
-include 'openrps_core/inc/Register.php';
+include 'openrps_core/eng/helpers/Layout.php';
+include 'openrps_core/eng/helpers/Register.php';
 
 //Set the title
 
