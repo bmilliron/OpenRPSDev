@@ -9,7 +9,7 @@ $layout = new Layout();
 
 $title = 'Sign up for OpenRPS';
 
-$layout->showHeader($title);
+$layout->showHeaderSignUp($title);
 
 ?>
 
@@ -36,7 +36,7 @@ $layout->showHeader($title);
   </ul>
 </fieldset>
 
-<div class="medium default btn"><input type="submit" value="Submit" /></div>
+<div class="medium default btn"><input type="submit" value="Sign Up" /></div>
 
 
 </form>

@@ -7,9 +7,9 @@ include 'openrps_core/eng/helpers/Layout.php';
 
 $layout = new Layout();
 
-$title = 'Log In to Altoona.co';
+$title = 'Log In to OpenRPS';
 
-$layout->showHeader($title);
+$layout->showHeaderLogin($title);
 
 ?>
 
@@ -20,7 +20,7 @@ $layout->showHeader($title);
 	
 <div class="three columns">
 	
-<form id='login' action='process_login.php' method='post'>
+<form id='customtheme' action='process_login.php' method='post'>
 
 <fieldset>
   <legend>Log In to OpenRPS</legend>
@@ -36,12 +36,14 @@ $layout->showHeader($title);
   </ul>
 </fieldset>
 
-<div class="medium default btn"><input type="submit" value="Login" /></div>
+<input type="button" name="submit" value="Login" id="submitbutton" onClick="alert('Submitted.');"/>
+
+
 
 
 </form>
 
-
+</div>
 
 
 
