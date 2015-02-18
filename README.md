@@ -1,3 +1,3 @@
 OpenRPS
 
-OpenRPS is an open source ERP system design for use in an emerging Resource Based Economy.
+OpenRPS is a resource planning system design for use in various economies. 
