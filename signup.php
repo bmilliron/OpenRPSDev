@@ -30,8 +30,16 @@ $layout->showHeaderSignUp($title);
       <input class="wide text input" id="username" type="text" placeholder="Enter a Username" name='username' />
     </li>
     <li class="field">
+      <label class="inline" for="text1">Email Address</label>
+      <input class="wide text input" id="email" type="text" placeholder="Enter your email address" name='email' />
+    </li>
+    <li class="field">
       <label class="inline" for="password">Password</label>
       <input class="wide password input" id="password" type="password" placeholder="Enter a Password" name='password' />
+    </li>
+	<li class="field">
+      <label class="inline" for="password_confirm">Confirm Password</label>
+      <input class="wide password input" id="password_confirm" type="password" placeholder="Confirm your password" name='password_confirm' />
     </li>
   </ul>
 </fieldset>
@@ -42,7 +50,7 @@ $layout->showHeaderSignUp($title);
 </form>
 
 
-
+ 
 
 
 

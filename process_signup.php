@@ -5,6 +5,7 @@
 
 include 'openrps_core/eng/helpers/Layout.php';
 include 'openrps_core/eng/helpers/Register.php';
+include 'openrps_core/eng/dbc/Db.php';
 
 //Set the title
 
@@ -24,9 +25,19 @@ $layout->showHeader($title);
 
 $username = $_POST['username'];
 $password = $_POST['password'];
+$password_confirm = $_POST['password_confirm'];
 $email = $_POST['email'];
 
 //Validate form
+
+//check passwords
+if($password != $password_confirm){
+	
+	echo "<div class=\"danger alert\">Your passwords don't match!</div>";
+	return;
+
+	}
+	
 
 $reg_status = $register->valCheckEmpty($username,$password,$email);
 

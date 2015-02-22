@@ -1,6 +1,6 @@
 <?php
 
-include 'db/Db.php';
+include '../dbc/Db.php';
 
 
 class Register{

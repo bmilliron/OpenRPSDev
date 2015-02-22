@@ -57,6 +57,36 @@ class Layout{
 		echo '});';
 		echo '</script>';
 		
+		echo '<script type="text/javascript">';
+		
+		echo '$("#register").validate({';
+        echo '   rules: {';
+        echo '       password: { ';
+        echo '         required: true,';
+        echo '            minlength: 6,';
+        echo '            maxlength: 10,';
+
+        echo '       } , ';
+
+       echo '            password_confirm: { ';
+       echo '             equalTo: "#password",';
+       echo '              minlength: 6,';
+       echo '              maxlength: 10';
+       echo '        }';
+
+
+      echo '     },';
+      echo 'messages:{';
+      echo '   password: { ';
+      echo '           required:"the passwords don\'t match!"';
+
+      echo '         }';
+      echo '}';
+
+      echo ' });';
+	  
+	  echo '</script>';
+		
         echo'</head>';
 
         echo'<body>';
@@ -125,7 +155,7 @@ class Layout{
         echo '<br>';
         echo '<br>';
         echo '<br>';
-        echo 'Copyright © OpenRPS';
+        echo 'Copyright © OpenRPS.org';
         echo '</body>';
         echo '</html>';
         

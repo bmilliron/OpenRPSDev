@@ -20,7 +20,7 @@ $layout->showHeaderLogin($title);
 	
 <div class="three columns">
 	
-<form id='customtheme' action='process_login.php' method='post'>
+<form id='sign_up' action='process_login.php' method='post'>
 
 <fieldset>
   <legend>Log In to OpenRPS</legend>
