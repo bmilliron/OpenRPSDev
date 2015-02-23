@@ -1,3 +1,7 @@
+OpenRPS
+
+OpenRPS is a resource planning system designed for emerging Resource Based Economies.
+
 ## Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
