@@ -1,4 +1,0 @@
-Action php55-cgi /dev/php55.cgi
-<FilesMatch \.php$>
-  SetHandler php55-cgi
-</FilesMatch>
