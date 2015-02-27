@@ -1,0 +1,144 @@
+body {
+	font-size: 100%;
+	font-family: sans-serif;
+	margin-right:5%;
+	margin-top:5%;
+	margin-bottom:5%;
+	background: #CFCCC6;
+	
+}
+nav {
+	border-radius: 0.3em;
+	height: 3em;
+	width: auto;
+	background: white;
+	
+}
+#footer {
+	border-radius: 0.3em;
+	height: 4em;
+	width: auto;
+	background: #244006; 
+	margin-top: 5px;
+}
+h5{
+	text-align:center;
+}
+h1 {
+	font-size: 4em;
+	text-align: center;
+	color: #333;
+}
+h2 {
+	text-align: center;
+}
+#content{
+	background:white;
+	width:95%;
+	height:100%;
+	margin-left:5%;
+	margin-right:5%;
+	border:1px solid grey;
+	border-radius:6px;
+}
+#content h1{
+	margin-right:100%;
+}
+hr{
+	width:95%;
+	color:#ECEDE1;
+}
+.image{
+	width:400px;
+	height:400px;
+}
+#menu {
+	width: 100%;
+	margin: 0;
+	list-style: none;
+}
+#menu li {
+	float: left;
+	position: relative;
+}
+#menu a {
+	float: left;
+	padding-left:15%;
+	color: black;
+	font:bold 16px/25px Arial, Helvetica;
+	text-decoration: none;
+}
+
+#menu li:hover > a {
+	background-color:#244006;
+	color: white;
+}
+
+#menu li:hover > ul {
+	display: block;
+}
+/* Sub-menu */
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+	position: absolute;
+	top: 22px;
+	left: 0;
+	z-index: 99999;
+	background-color: #244006;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+#menu ul li {
+	width: 150px;
+	float: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+}
+#menu ul li:last-child {
+	box-shadow: none;
+}
+#menu ul a {
+	padding: 10px;
+	height: auto;
+	line-height: 1;
+	display: block;
+	white-space: nowrap;
+	float: none;
+	text-transform: none;
+}
+
+
+#menu ul a:hover {
+	background-color: #4F7327;
+}
+#menu ul li:first-child a {
+	border-radius: 5px 5px 0 0;
+}
+#menu ul li:first-child a:hover:after {
+	border-bottom-color: #04acec;
+}
+#menu ul li:last-child a {
+	border-radius: 0 0 5px 5px;
+}
+/* Clear floated elements */
+#menu:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+#menu ul ul {
+	left: 100%;
+	top: 0;
+	width: 170px;
+	max-height: 400px;
+	overflow: auto;
+}
