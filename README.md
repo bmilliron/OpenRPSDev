@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ##OpenRPS
 
 [OpenRPS](http://www.openrps.org)is a resource planning system designed for emerging Resource Based Economies.
@@ -25,3 +26,7 @@ Thank you for considering contributing to the Laravel framework! The contributio
 ### License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+=======
+# openrps_nav
+simple skeleton for the navigation.  
+>>>>>>> 4d4cab1227e56586a4a4cfbf03ed44178986ee26
