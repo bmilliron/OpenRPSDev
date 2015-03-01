@@ -1,0 +1,24 @@
+/* Login specific code */
+
+body{
+    background: #333;
+}
+
+.login_holder{
+    margin: auto;
+    background: white;
+    width: 400px;
+    font-size: 16px;
+    font-family: 'Karla';
+    padding: 50px;
+    box-shadow: 0px 0px 15px grey;
+    margin-top: 150px;
+}
+
+.login_holder .btn{
+    margin-top: 10px;
+}
+
+.login_holder a{
+    margin-left: 25px;
+}
