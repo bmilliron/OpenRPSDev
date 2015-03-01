@@ -47,9 +47,17 @@ input[type="text"], input[type="password"]{
     margin: 10px 10px 10px 0px;
 }
 
+/* spans */
+
 .green{
     color: #006837;
 }
+
+.small{
+    font-size: 9px;
+}
+
+/* buttons */
 
 .btn{
     border: none;
@@ -123,3 +131,4 @@ table tr th:last-child, table tr td:last-child{
 table tr:first-child{
     border-bottom: 2px solid #ddd;
 }
+

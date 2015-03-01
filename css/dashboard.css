@@ -168,3 +168,9 @@ section{
 .content div{
     padding: 55px;
 }
+.help {
+    position: fixed;
+    width: 300px;
+    text-align: center;
+    bottom: 15px;
+}
