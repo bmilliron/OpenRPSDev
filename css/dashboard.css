@@ -1,0 +1,163 @@
+/* Dashboard specific code */
+
+header{
+    width: 100%;
+    position: fixed;
+    padding-right: 15px;
+}
+
+header div div{
+    float: right;
+}
+
+section{
+    padding-top: 90px;
+}
+
+
+/* Alert menu code */
+
+.alert_menu_wrapper{
+    z-index: 1000;
+    position: fixed;
+    right: 25px;
+    top: 95px;  
+    display: none;
+}
+
+.alert_menu_pointer{
+   
+    position: relative;
+    top: -18px;
+    margin-right: 5px;
+}
+
+.alert_menu_pointer img{
+    width: 50px;
+    float: right;
+}
+
+.alert_menu{
+    z-index: -1;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    height: 350px;
+    width: 300px;
+    background: white;
+    
+}
+
+.alert_menu ul{
+    margin: 0; padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.alert_menu ul li{
+    list-style: none;
+    display: block;
+    height: 75px;
+    padding: 27px;
+    border-bottom: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    margin-top: -1px;
+}
+
+.alert_menu ul li:hover{
+    
+    cursor: pointer;
+    background: #333;
+    color: white;
+}
+
+/* Header code */ 
+
+.logo{
+    padding-right: 25px;
+    border-right: 1px solid lightgrey;
+    min-width: 300px;
+    float: left;
+}
+
+.credit_count{
+    line-height: 90px;
+    font-family: 'Karla';
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0px 35px 0px 35px;
+    border-left: 1px solid lightgrey;
+}
+
+.alerts{
+    height: 90px;
+    border-left: 1px solid lightgrey;
+}
+.alerts img{
+    height: 80px;
+    padding: 15px;
+}
+
+.alerts img:hover{
+    cursor:pointer;
+}
+
+/* Sidemenu code */
+
+.sidemenu{
+    padding: 0;
+    padding-top: 90px; 
+    background: #fafafa;
+    position: fixed;
+    height: 100%;
+    min-width: 300px;
+}
+
+.sidemenu div{
+    z-index: 1000;
+}
+
+.request{
+    text-align: center;
+    
+}
+
+.side_navigation{
+    margin-top: 90px;
+}
+
+.side_navigation ul{
+    margin: 0; padding: 0;
+}
+
+.side_navigation ul li{
+    list-style: none;
+}
+.side_navigation ul li a{
+    display: block;
+    padding: 15px 25px 15px 25px;
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Karla';
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    margin-top: -1px;
+}
+
+.side_navigation ul li a:hover{
+    background: #efefef;
+}
+
+/* Content code */
+
+.content{
+    padding-left: 300px;
+}
+.content div{
+    padding: 55px;
+}

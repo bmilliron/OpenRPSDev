@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <!-- CSS Libraries -->
+        <link rel="stylesheet" href="css/vendor/normalize.css"/>
+        <link rel="stylesheet" href="css/vendor/foundation.min.css"/>
+        
+        <!-- CSS code -->
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/dashboard.css"/>
+                                     
+        
+    </head>
+    <body>
+        <div class="alert_menu_wrapper" id="alertmenu">
+            <div class="alert_menu_pointer">
+                <img src="img/icons/triangle.svg" alt="point"/>
+            </div>
+            <div class="alert_menu">
+                <ul>
+                    <li>Recycler bot down</li>
+                    <li>You have ordered a pencil</li>
+                </ul>
+            </div>
+        </div>
+        <header>
+            <div class="logo">
+                <img src="img/logo.svg"/>
+            </div>
+            <div class="options">
+                
+                <div class="alerts"><img src="img/icons/alerts.svg" id="alert_button" alt="alert button"/></div>
+                <div class="credit_count">You have <span class="green">1200</span> credits</div>
+            </div>
+        </header>
+        
+        <section class="">
+            <div class="sidemenu">
+                <div class="request">
+                    <a href="#place_request" class="btn">Place Request</a>
+                </div>
+                <div class="side_navigation">
+                    <ul>
+                        <li><a href="#all_orders">All Orders</a></li>
+                        <li><a href="#browse_products">Browse Products</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div>
+                    <h1>DASHBOARD</h1><br />
+                    <h3>RECENT ORDERS</h3>
+                </div>
+                <div>
+                    <table>
+                        <tr><th>Order name</th><th>Credits</th><th>Estimated delivery time</th></tr>
+                        <tr><td>Pencil</td><td>5 Cr</td><td>15th January 2015</td></tr>
+                        <tr><td>Wool sweater</td><td>10 Cr</td><td>5th April 2015</td></tr>
+                        <tr><td>Vegetable assortment</td><td>2 Cr</td><td>Tomorrow</td></tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+     
+        
+        <!-- JS libraries -->
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        
+        <!-- JS code -->
+        <script src="js/UI/alertmenu.js"></script>
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>
