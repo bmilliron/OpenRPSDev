@@ -14,6 +14,13 @@ section{
     padding-top: 90px;
 }
 
+.credits{
+    text-decoration: none;
+}
+
+.credits:hover{
+    text-decoration: underline;
+}
 
 /* Alert menu code */
 
