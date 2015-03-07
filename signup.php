@@ -22,32 +22,41 @@ $layout->showHeaderSignUp($title);
 	
 <form id='register' action='process_signup.php' method='post'>
 
-<fieldset>
-  <legend>Sign Up for OpenRPS</legend>
-  <ul>
-    <li class="field">
+<div class="login_holder">
+
+	 <h1> SIGN UP </h1>
+ 
       <label class="inline" for="text1">Username</label>
       <input class="wide text input" id="username" type="text" placeholder="Enter a Username" name='username' />
-    </li>
-    <li class="field">
+   
+  
       <label class="inline" for="text1">Email Address</label>
       <input class="wide text input" id="email" type="text" placeholder="Enter your email address" name='email' />
-    </li>
-    <li class="field">
+   
+   
       <label class="inline" for="password">Password</label>
       <input class="wide password input" id="password" type="password" placeholder="Enter a Password" name='password' />
-    </li>
-	<li class="field">
+   
+
       <label class="inline" for="password_confirm">Confirm Password</label>
       <input class="wide password input" id="password_confirm" type="password" placeholder="Confirm your password" name='password_confirm' />
-    </li>
-  </ul>
-</fieldset>
+    
+	  <div class="btn"><input type="submit" value="Sign Up" /></div>
+	  
+	  </form>
 
-<div class="medium default btn"><input type="submit" value="Sign Up" /></div>
+  </div>
+  
+   <!-- JS libraries -->
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+  
+  
 
 
-</form>
+
+
+
+
 
 
  

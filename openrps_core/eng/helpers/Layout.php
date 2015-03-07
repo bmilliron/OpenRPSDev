@@ -49,6 +49,13 @@ class Layout{
         echo  '<script language="javascript" type="text/javascript" src="openrps_core/js/jquery-ui-1.11.3/jquery-ui.min.js"></script>';
 		echo  '<script language="javascript" type="text/javascript" src="openrps_core/js/jquery/jquery-1.11.2.min.js"></script>';
 		echo  '<link rel="stylesheet" href="openrps_core/css/style.css" />';
+		echo  '<!-- CSS Libraries -->';
+        echo  '<link rel="stylesheet" href="openrps_core/css/vendor/normalize.css"/>';
+        echo  '<link rel="stylesheet" href="openrps_core/css/vendor/foundation.min.css"/>';
+        
+        echo  '<!-- CSS code -->';
+        echo  '<link rel="stylesheet" href="openrps_core/css/main.css"/>';
+        echo  '<link rel="stylesheet" href="openrps_core/css/login.css"/>';
 		
 		echo '<script type="text/javascript">';
 		echo '$(function()';
@@ -91,7 +98,14 @@ class Layout{
 
         echo'<body>';
 		
-		echo '<img src="img/OpenRPSLogo.png">';
+		echo'<header>';
+        echo'    <div class="columns large-2 logo">';
+        echo'        <img src="img/logo.svg"/>';
+        echo'    </div>';
+        echo'    <div class="columns large-10">';
+                
+        echo'    </div> ';
+        echo'</header>';
 
         echo'<br>';
         echo'<br>';
