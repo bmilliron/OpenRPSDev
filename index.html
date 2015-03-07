@@ -1,72 +1,39 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-
 <html>
-<head>
-    <title>Welcome to OpenRPS</title>
-
-<meta name="description" content="This site is a portal of useful things for the people of Altoona, Pa and surrounding communities." />
-<link href="openrps_core/js/jquery-ui/jquery-ui.min.css" media="screen" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="sapadian/css/frameworks/gumby/css/gumby.css">
-<link rel="stylesheet" type="text/css" href="sapadian/css/frameworks/gumby/css/style.css">
-<script language="javascript" type="text/javascript" src="sapadian/js/javascript_form/gen_validatorv4.js"></script>
-<script language="javascript" type="text/javascript" src="openrps_core/js/jquery-ui-1.11.3/jquery-ui.min.js"></script>
-<script language="javascript" type="text/javascript" src="openrps_core/js/jquery/jquery-1.11.2.min.js"></script>
-<link rel="stylesheet" href="openrps_core/css/style.css" />
-
- <script>
-$(function() {
-$( "input[type=submit], a, button" )
-.button()
-.click(function( event ) {
-event.preventDefault();
-});
-});
-</script>
-
-</head>
-
-<body>
-
-<img src="img/OpenRPSLogo.png">
-    <br>
-    <br>
-	
-
-
-<a href="login.php"><h1>Login</h1></a>
-<br>
-<a href="signup.php"><h1>Sign Up</h1></a>
-
-
-
-
- <br>
-
-  </div>
-  
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <head>
+        <!-- CSS Libraries -->
+        <link rel="stylesheet" href="openrps_core/css/vendor/normalize.css"/>
+        <link rel="stylesheet" href="openrps_core/css/vendor/foundation.min.css"/>
+        
+        <!-- CSS code -->
+        <link rel="stylesheet" href="openrps_core/css/main.css"/>
+        <link rel="stylesheet" href="openrps_core/css/login.css"/>
+                                     
+        
+    </head>
+    <body>
     
-<div class="three columns">
-    
-      
-    
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-Copyright © 2015 OpenRPS.org
-  
-
-</body>
+        <header>
+            <div class="columns large-2 logo">
+                <img src="img/logo.svg"/>
+            </div>
+            <div class="columns large-10">
+                
+            </div> 
+        </header>
+        
+        <div class="login_holder">
+            <h1>LOGIN</h1>
+            <form>
+                <input type="text" placeholder="USERNAME"/><br />
+                <input type="password" placeholder="PASSWORD"/><br />
+                <input type="submit" class="btn" value="login"/><a href="signup.php">Need an account?</a>
+            </form>
+        </div>
+        
+        <!-- JS libraries -->
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        
+        <!-- JS code -->
+        
+    </body>
 </html>
