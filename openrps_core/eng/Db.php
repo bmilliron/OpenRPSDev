@@ -13,7 +13,7 @@ class Db{
     
     public function connectProd(){
           
-    $db_conn_test = pg_connect("host=localhost port=5432 dbname= user= password=");
+    $db_conn_test = pg_connect("host=localhost port=5432 dbname=openrps_dev user=openrps_dev password=greed205");
     
     return $db_conn_test;
     
@@ -29,7 +29,7 @@ class Db{
         //Connect to the db
         
         $db = $this->connectProd();
-        $db2 = $this->connectProd();
+       
         
         //Check for username and email address
         
@@ -40,14 +40,8 @@ class Db{
         
         $username_check_result = pg_get_result($db);
         $username_check_result_rows = pg_num_rows($username_check_result);
-        
-        pg_send_query($db2, $query_email_check)or die('Query failed: ' . pg_last_error());
-        
-        $email_check_result = pg_get_result($db2);
-        $email_check_result_rows = pg_num_rows($email_check_result);
-        
+       
         pg_close($db);
-        pg_close($db2);
         
         if($username_check_result_rows == 0){
             

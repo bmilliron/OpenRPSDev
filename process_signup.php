@@ -5,7 +5,7 @@
 
 include 'openrps_core/eng/Layout.php';
 include 'openrps_core/eng/Register.php';
-include 'openrps_core/eng/Db.php';
+include_once 'openrps_core/eng/Db.php';
 
 //Set the title
 
@@ -94,8 +94,6 @@ if($reg_status == 'true'){
 
 
 <?php
-
-$layout = new Layout();
 
 $layout->showFooter();
 

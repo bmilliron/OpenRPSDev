@@ -3,7 +3,7 @@
 
 <?php
 
-include 'openrps_core/eng/helpers/Layout.php';
+include 'openrps_core/eng/Layout.php';
 
 $layout = new Layout();
 
@@ -24,22 +24,10 @@ $layout->showHeaderLogin($title);
 
 <fieldset>
   <legend>Log In to OpenRPS</legend>
-  <ul>
-    <li class="field">
-      <label class="inline" for="text1">Username</label>
-      <input class="wide text input" id="username" type="text" placeholder="Enter a Username" name='username' />
-    </li>
-    <li class="field">
-      <label class="inline" for="password">Password</label>
-      <input class="wide password input" id="password" type="password" placeholder="Enter a Password" name='password' />
-    </li>
-  </ul>
+    <input type="text" placeholder="USERNAME"/><br />
+    <input type="password" placeholder="PASSWORD"/><br />
+    <input type="submit" class="btn" value="login"/><a href="signup.php">Need an account?</a>
 </fieldset>
-
-<input type="button" name="submit" value="Login" id="submitbutton" onClick="alert('Submitted.');"/>
-
-
-
 
 </form>
 
