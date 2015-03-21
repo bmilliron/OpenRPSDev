@@ -1,7 +1,6 @@
 <?php
 
-
-class Db {
+class Db{
     
     public function connectTest(){
           
@@ -155,6 +154,5 @@ class Db {
     } 
         
 }
-   
-        
+       
 ?>

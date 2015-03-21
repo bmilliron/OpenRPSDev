@@ -3,9 +3,9 @@
 
 <?php
 
-include 'openrps_core/eng/helpers/Layout.php';
-include 'openrps_core/eng/helpers/Register.php';
-include 'openrps_core/eng/dbc/Db.php';
+include 'openrps_core/eng/Layout.php';
+include 'openrps_core/eng/Register.php';
+include 'openrps_core/eng/Db.php';
 
 //Set the title
 
