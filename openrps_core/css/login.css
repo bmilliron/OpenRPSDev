@@ -1,9 +1,5 @@
 /* Login specific code */
 
-body{
-    background: #333;
-}
-
 .login_holder{
     margin: auto;
     background: white;
@@ -15,7 +11,7 @@ body{
     margin-top: 150px;
 }
 
-.login_holder .btn{
+.login_holder .button{
     margin-top: 10px;
 }
 

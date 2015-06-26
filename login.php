@@ -9,25 +9,28 @@ $layout = new Layout();
 
 $title = 'Log In to OpenRPS';
 
-$layout->showHeaderLogin($title);
+$layout->getLayout("header_login");
 
 ?>
 
-
-<br>
-<br>
-<br>
-	
 <div class="three columns">
-	
+
 <form id='sign_up' action='process_login.php' method='post'>
 
-<fieldset>
-  <legend>Log In to OpenRPS</legend>
-    <input type="text" placeholder="USERNAME"/><br />
-    <input type="password" placeholder="PASSWORD"/><br />
-    <input type="submit" class="btn" value="login"/><a href="signup.php">Need an account?</a>
-</fieldset>
+	<div class="login-holder">
+		<h2>Login</h2>
+		<div>
+			<input type="text" class="text-field" placeholder="USERNAME"/>
+		</div>
+		<div>
+			<input type="password" class="text-field" placeholder="PASSWORD"/>
+		</div>
+		<div>
+			<input type="submit" class="button" value="login"/>
+			<a href="signup.php">Need an account?</a>
+		</div>
+
+	</div>
 
 </form>
 
@@ -43,6 +46,6 @@ $layout->showHeaderLogin($title);
 
 $layout = new Layout();
 
-$layout->showFooter();
+$layout->getLayout("footer");
 
 ?>

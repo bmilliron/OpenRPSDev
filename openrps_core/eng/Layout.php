@@ -1,186 +1,38 @@
 <?php
+// Reminder to self: set title dynamically
+
 
 class Layout{
+	//this array holds all the founded layouts
+	private $layouts = [];
+	private $layouts_path = "openrps_core/eng/partials/";
 
-	public function showHeaderLogin($title){
-        
-       
-        echo  '<head>';
-        echo  "<title>$title</title>";
-        echo  '<meta name="description" content="This site is a portal of useful things for the people of Altoona, Pa and surrounding communities." />';
-		echo  '<link href="openrps_core/js/jquery-ui/jquery-ui.min.css" media="screen" rel="stylesheet" type="text/css">';
-        echo  '<link rel="stylesheet" type="text/css" href="sapadian/css/frameworks/gumby/css/gumby.css">';
-        echo  '<link rel="stylesheet" type="text/css" href="sapadian/css/frameworks/gumby/css/style.css">';
-        echo  '<script language="javascript" type="text/javascript" src="sapadian/js/javascript_form/gen_validatorv4.js"></script>';
-        echo  '<script language="javascript" type="text/javascript" src="openrps_core/js/jquery-ui-1.11.3/jquery-ui.min.js"></script>';
-		echo  '<script language="javascript" type="text/javascript" src="openrps_core/js/jquery/jquery-1.11.2.min.js"></script>';
-		echo  '<link rel="stylesheet" href="openrps_core/css/style.css" />';
-		echo  ' <!-- CSS Libraries -->';
-        echo  '<link rel="stylesheet" href="openrps_core/css/vendor/normalize.css"/>';
-        echo  '<link rel="stylesheet" href="openrps_core/css/vendor/foundation.min.css"/>';
-        
-        echo  '<!-- CSS code -->';
-        echo  '<link rel="stylesheet" href="openrps_core/css/main.css"/>';
-        echo  '<link rel="stylesheet" href="openrps_core/css/login.css"/>';
-		
-		echo '<script type="text/javascript">';
-		echo '$(function()';
-		echo '{';
-		echo '	$("form").form();';
-		echo '});';
-		echo '</script>';
-		
-        echo'</head>';
+	public function __construct(){
+		//scan the partials directory to scan for layouts
+		$this->layouts = array_slice(scandir($this->layouts_path), 2);
+		// I slice first two elements because they contain paths that bug out my get layout
+	}
 
-        echo'<body>';
-		
-		echo '<img src="img/OpenRPSLogo.png">';
+	public function getLayout($layout){
+		$exists = false;
 
-        echo'<br>';
-        echo'<br>';
+		$file_to_load = $layout + ".php";
 
-        echo '<div class="medium primary btn"><a href="login.php">Login</a></div><div class="medium primary btn"><a href="signup.php">Sign Up</a></div>';        
-        
-    }
-	
-	public function showHeaderSignUp($title){
-        
-       
-        echo  '<head>';
-        echo  "<title>$title</title>";
-        echo  '<meta name="description" content="This site is a portal of useful things for the people of Altoona, Pa and surrounding communities." />';
-		echo  '<link href="openrps_core/js/jquery-ui/jquery-ui.min.css" media="screen" rel="stylesheet" type="text/css">';
-        echo  '<link rel="stylesheet" type="text/css" href="sapadian/css/frameworks/gumby/css/gumby.css">';
-        echo  '<link rel="stylesheet" type="text/css" href="sapadian/css/frameworks/gumby/css/style.css">';
-        echo  '<script language="javascript" type="text/javascript" src="sapadian/js/javascript_form/gen_validatorv4.js"></script>';
-        echo  '<script language="javascript" type="text/javascript" src="openrps_core/js/jquery-ui-1.11.3/jquery-ui.min.js"></script>';
-		echo  '<script language="javascript" type="text/javascript" src="openrps_core/js/jquery/jquery-1.11.2.min.js"></script>';
-		echo  '<link rel="stylesheet" href="openrps_core/css/style.css" />';
-		echo  '<!-- CSS Libraries -->';
-        echo  '<link rel="stylesheet" href="openrps_core/css/vendor/normalize.css"/>';
-        echo  '<link rel="stylesheet" href="openrps_core/css/vendor/foundation.min.css"/>';
-        
-        echo  '<!-- CSS code -->';
-        echo  '<link rel="stylesheet" href="openrps_core/css/main.css"/>';
-        echo  '<link rel="stylesheet" href="openrps_core/css/login.css"/>';
-		
-		echo '<script type="text/javascript">';
-		echo '$(function()';
-		echo '{';
-		echo '	$("form").form();';
-		echo '});';
-		echo '</script>';
-		
-		echo '<script type="text/javascript">';
-		
-		echo '$("#register").validate({';
-        echo '   rules: {';
-        echo '       password: { ';
-        echo '         required: true,';
-        echo '            minlength: 6,';
-        echo '            maxlength: 10,';
+		//check if layout page exists then load it. Else display layout not found
+		foreach($this->layouts as $page){
+			if($page == $file_to_load){
+				$exists = true;
+				break;
+			}
+		}
 
-        echo '       } , ';
+		if($exists){
+			print(file_get_contents($this->layouts_path . $page));
+		}else{
+			return "Layout not found";
+		}
 
-       echo '            password_confirm: { ';
-       echo '             equalTo: "#password",';
-       echo '              minlength: 6,';
-       echo '              maxlength: 10';
-       echo '        }';
-
-
-      echo '     },';
-      echo 'messages:{';
-      echo '   password: { ';
-      echo '           required:"the passwords don\'t match!"';
-
-      echo '         }';
-      echo '}';
-
-      echo ' });';
-	  
-	  echo '</script>';
-		
-        echo'</head>';
-
-        echo'<body>';
-		
-		echo'<header>';
-        echo'    <div class="columns large-2 logo">';
-        echo'        <img src="img/logo.svg"/>';
-        echo'    </div>';
-        echo'    <div class="columns large-10">';
-                
-        echo'    </div> ';
-        echo'</header>';
-
-        echo'<br>';
-        echo'<br>';
-
-        echo '<div class="medium primary btn"><a href="login.php">Login</a></div><div class="medium primary btn"><a href="signup.php">Sign Up</a></div>';        
-        
-    }
-    
-    
-    public function showHeader($title){
-        
-       
-        echo'<head>';
-        echo    "<title>$title</title>";
-        echo    '<meta name="description" content="This site is a portal of useful things for the people of Altoona, Pa and surrounding communities." />';
-        echo   '<link rel="stylesheet" type="text/css" href="sapadian/css/frameworks/gumby/css/gumby.css">';
-        echo   '<link rel="stylesheet" type="text/css" href="sapadian/css/frameworks/gumby/css/style.css">';
-        echo  '<script language="javascript" type="text/javascript" src="sapadian/js/javascript_form/gen_validatorv4.js"></script>';
-        echo  '<script language="javascript" type="text/javascript" src="openrps_core/js/jquery-ui-1.11.3/jquery-ui.min.js"></script>';
-		echo  '<script language="javascript" type="text/javascript" src="openrps_core/js/jquery/jquery-1.11.2.min.js"></script>';
-        echo'</head>';
-
-        echo'<body>';
-
-        echo'<br>';
-        echo'<br>';
-
-        echo '<div class="medium primary btn"><a href="login.php">Login</a></div><div class="medium primary btn"><a href="signup.php">Sign Up</a></div>';        
-        
-    }
-    
-    public function showHeaderLoggedIn($title){
-        
-        
-        echo'<head>';
-        echo    "<title>$title</title>";
-        echo    '<meta name="description" content="This site is a portal of useful things for the people of Altoona, Pa and surrounding communities." />';
-        echo   '<link rel="stylesheet" type="text/css" href="sapadian/css/frameworks/gumby/css/gumby.css">';
-        echo   '<link rel="stylesheet" type="text/css" href="sapadian/css/frameworks/gumby/css/style.css">';
-        echo  '<script language="javascript" type="text/javascript" src="sapadian/js/javascript_form/gen_validatorv4.js"></script>';
-        
-        echo'</head>';
-
-        echo'<body>';
-
-        echo'<br>';
-        echo'<br>';
-        
-
-        echo '<div class="medium primary btn"><a href="main.php">Home</a></div><div class="medium primary btn"><a href="profile.php">My Profile</a></div></div></div><div class="medium primary btn"><a href="logout.php">Log Out</a></div>';        
-        
-    }
-    
-    public function showFooter(){
-        
-        echo '<br>';
-        echo '<br>';
-        echo '<br>';
-        echo '<br>';
-        echo '<br>';
-        echo '<br>';
-        echo '<br>';
-        echo '<br>';
-        echo 'Copyright © OpenRPS.org';
-        echo '</body>';
-        echo '</html>';
-        
-    }
+	}
 
 }
 
