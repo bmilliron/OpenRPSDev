@@ -37,6 +37,11 @@ header img{
     margin-left: 15px;
 }
 
+.header-utility{
+    line-height: 90px;
+    text-align: right;
+}
+
 .center{
     text-align: center;
 }

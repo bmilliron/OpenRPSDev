@@ -14,24 +14,7 @@ class Layout{
 	}
 
 	public function getLayout($layout){
-		$exists = false;
-
-		$file_to_load = $layout + ".php";
-
-		//check if layout page exists then load it. Else display layout not found
-		foreach($this->layouts as $page){
-			if($page == $file_to_load){
-				$exists = true;
-				break;
-			}
-		}
-
-		if($exists){
-			print(file_get_contents($this->layouts_path . $page));
-		}else{
-			return "Layout not found";
-		}
-
+		print(file_get_contents($this->layouts_path . $layout . ".php"));
 	}
 
 }

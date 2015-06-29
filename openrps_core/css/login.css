@@ -1,6 +1,6 @@
 /* Login specific code */
 
-.login_holder{
+.login-holder{
     margin: auto;
     background: white;
     width: 400px;
@@ -11,10 +11,10 @@
     margin-top: 150px;
 }
 
-.login_holder .button{
+.login-holder .button{
     margin-top: 10px;
 }
 
-.login_holder a{
+.login-holder a{
     margin-left: 25px;
 }

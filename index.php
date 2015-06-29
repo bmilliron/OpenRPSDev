@@ -13,7 +13,7 @@
 
         <div class="center">
             <img src="img/logo.svg" class="logo-small"/>
-            <h4>This is a placeholder for the homepage</h4>
+            <h4>This is a placeholder for the homepage. This is going to be the "promomotional page"</h4>
             <p>
                 To login <a href="login.php">Click Here</a>
             </p>
