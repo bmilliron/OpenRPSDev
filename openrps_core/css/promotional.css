@@ -1,0 +1,27 @@
+.hero{
+    height: 600px;
+    background-image: url('../../img/hero.jpg');
+
+    /* Hero image will be an illustration by napalm*/
+}
+
+.hero-text{
+    text-align: center;
+    padding-top: 250px;
+}
+
+.hero-text h1{
+    color: white;
+    font-size: 64px;
+}
+
+.hero-text h3{
+    color: rgb(103, 215, 74);
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+.dark-transparent-bg{
+    background-color: rgba(20, 20, 20, 0.80) !important;
+    padding: 6px;
+}

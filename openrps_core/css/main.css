@@ -15,6 +15,8 @@ DarkerGreen: #005b2e;
 /* All general code */
 
 body{
+    padding: 0;
+    margin: 0;
     font-family: 'Open Sans';
 }
 
@@ -25,7 +27,7 @@ a{
 header{
     height: 90px;
     background: white;
-    box-shadow: 0px 0px 10px lightgrey;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -35,9 +37,78 @@ header img{
     margin-left: 15px;
 }
 
-/* Buttons and textboxes */
+.header-utility{
+    line-height: 90px;
+    text-align: right;
+}
 
-input[type="text"], input[type="password"]{
+.header-buttongroup{
+    margin: 0;
+    padding: 0;
+}
+
+.header-buttongroup li{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.header-button{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 90px;
+    padding: 0px 35px;
+    background-color: #fff;
+    border-left: 1px solid lightgrey;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Karla';
+}
+
+.header-button:hover{
+    background-color: #EEE;
+}
+
+.header-button-green{
+    background-color: #006837;
+    color: white;
+}
+
+.header-button-green:hover{
+    background-color: #067e46;
+}
+
+.header-right{
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.center{
+    text-align: center;
+}
+
+/* Logo styles */
+
+.logo-small{
+    height: 100px;
+}
+
+/* Backgrounds */
+
+.dark-bg{
+    background-color: #333;
+}
+
+.light-bg{
+    background-color: #F9F9F9;
+}
+
+/* Textboxes */
+
+.text-field{
     width: 100%;
     border: 3px solid #dcdcdc;
     background: #f9f9f9;
@@ -45,6 +116,21 @@ input[type="text"], input[type="password"]{
     outline: none;
     font-family: 'Karla';
     margin: 10px 10px 10px 0px;
+}
+
+/* Css that shows error in the field */
+.error-field{
+    border: 3px solid red;
+}
+
+.error{
+    margin: 2px;
+    display: none;
+    border: 1px solid red;
+    background-color: rgb(255, 187, 187);
+    color: red;
+    font-size: 14px;
+    padding: 5px;
 }
 
 /* spans */
@@ -59,24 +145,27 @@ input[type="text"], input[type="password"]{
 
 /* buttons */
 
-.btn{
+.button{
     border: none;
     color: white;
     font-family: 'Karla';
     text-transform: uppercase;
     background: #006837;
-    border-bottom: 5px solid #005b2e;
+    box-shadow: 0px 5px 0px #005b2e;
     padding: 15px 20px 15px 20px;
     outline: none;
     text-decoration: none;
 }
 
-.btn:hover{
+.button:hover{
     background: #03763f;
 }
 
-.btn:active{
+.button:active{
+    position: relative;
+    top: 5px;
     background: #005b2e;
+    box-shadow: 0px 0px 0px transparent;
 }
 
 h1, h2, h3{
@@ -131,4 +220,3 @@ table tr th:last-child, table tr td:last-child{
 table tr:first-child{
     border-bottom: 2px solid #ddd;
 }
-
