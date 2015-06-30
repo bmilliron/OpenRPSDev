@@ -21,29 +21,38 @@ $layout = new Layout();
 	<?php $layout->getLayout("header_notloggedin"); ?>
 	<div class="three columns">
 
-	<form id='register' action='process_signup.php' method='post'>
+	<form id='signup_form' action='process_signup.php' method='post'>
 
 		<div class="login-holder">
 
-			 <h1> SIGN UP </h1>
+			<h2>Sign up</h2>
 
-		      <label class="inline" for="text1">Username</label>
-		      <input class="text-field" id="username" type="text" placeholder="Enter a Username" name='username' />
-
-
-		      <label class="inline" for="text1">Email Address</label>
-		      <input class="text-field" id="email" type="text" placeholder="Enter your email address" name='email' />
+		    <label class="inline" for="username">Username</label>
+		    <input class="text-field" id="username" type="text" placeholder="Enter a Username" name="username" />
 
 
-		      <label class="inline" for="password">Password</label>
-		      <input class="text-field" id="password" type="password" placeholder="Enter a Password" name='password' />
+		    <label class="inline" for="email">Email Address</label>
+		    <input class="text-field" id="email" type="text" placeholder="Enter your email address" name="email" />
 
 
-		      <label class="inline" for="password_confirm">Confirm Password</label>
-		      <input class="text-field" id="password_confirm" type="password" placeholder="Confirm your password" name='password_confirm' />
+		    <label class="inline" for="password">Password</label>
+		    <input class="text-field" id="password" type="password" placeholder="Enter a Password" name="password" />
 
-			 <div>
-				<input type="submit" class="button" value="Sign Up" />
+
+		    <label class="inline" for="password_confirm">Confirm Password</label>
+		    <input class="text-field" id="password_confirm" type="password" placeholder="Confirm your password" name="password_confirm" />
+
+			<div class="error" id="field_error">
+				One or more fields are not properly filled in!
+			</div>
+
+			<div class="error" id="password_confirmation_error">
+				Your password confirmation is no properly filled in!
+			</div>
+
+
+			<div>
+				<input type="submit" id="signup_submit" class="button" value="Sign Up" />
 				<a href="login.php">Already an account?</a>
 			</div>
 
@@ -56,6 +65,7 @@ $layout = new Layout();
 	<?php $layout->getLayout("footer"); ?>
 
 	<!-- JS Libs -->
-	<script src="js/vendor/jquery-1.11.2.min.js"></script>
+	<script src="openrps_core/js/vendor/jquery-1.11.2.min.js"></script>
+	<script src="openrps_core/js/signup.js"></script>
 </body>
 </html>

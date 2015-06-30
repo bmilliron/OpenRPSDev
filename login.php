@@ -24,18 +24,23 @@ $layout->getLayout("header_notloggedin");
 ?>
 
 <div class="three columns">
-	<form id='sign_up' action='process_login.php' method='post'>
+	<form id='login_form' action='process_login.php' method='post'>
 
 		<div class="login-holder">
 			<h2>Login</h2>
-			<div>
-				<input type="text" name="username" class="text-field" placeholder="USERNAME"/>
+
+			<label class="inline" for="username">Username</label>
+			<input type="text" id="username" name="username" class="text-field" placeholder="Enter your username"/>
+
+			<label class="inline" for="password">Password</label>
+			<input type="password" id="password" name="password" class="text-field" placeholder="Enter your password"/>
+
+			<div class="error"  id="field_error">
+				One or more fields are not properly filled in!
 			</div>
+
 			<div>
-				<input type="password" name="password" class="text-field" placeholder="PASSWORD"/>
-			</div>
-			<div>
-				<input type="submit" class="button" value="login"/> 
+				<input type="submit" id="login_submit" class="button" value="login"/>
 				<a href="signup.php">Need an account?</a>
 			</div>
 

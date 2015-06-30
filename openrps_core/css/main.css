@@ -27,7 +27,7 @@ a{
 header{
     height: 90px;
     background: white;
-    box-shadow: 0px 0px 10px lightgrey;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
 
@@ -39,6 +39,50 @@ header img{
 
 .header-utility{
     line-height: 90px;
+    text-align: right;
+}
+
+.header-buttongroup{
+    margin: 0;
+    padding: 0;
+}
+
+.header-buttongroup li{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.header-button{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 90px;
+    padding: 0px 35px;
+    background-color: #fff;
+    border-left: 1px solid lightgrey;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Karla';
+}
+
+.header-button:hover{
+    background-color: #EEE;
+}
+
+.header-button-green{
+    background-color: #006837;
+    color: white;
+}
+
+.header-button-green:hover{
+    background-color: #067e46;
+}
+
+.header-right{
+    margin: 0;
+    padding: 0;
     text-align: right;
 }
 
@@ -72,6 +116,21 @@ header img{
     outline: none;
     font-family: 'Karla';
     margin: 10px 10px 10px 0px;
+}
+
+/* Css that shows error in the field */
+.error-field{
+    border: 3px solid red;
+}
+
+.error{
+    margin: 2px;
+    display: none;
+    border: 1px solid red;
+    background-color: rgb(255, 187, 187);
+    color: red;
+    font-size: 14px;
+    padding: 5px;
 }
 
 /* spans */
