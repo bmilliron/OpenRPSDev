@@ -23,31 +23,31 @@ $layout->getLayout("header_notloggedin");
 
 ?>
 
-<div class="three columns">
-	<form id='login_form' action='process_login.php' method='post'>
 
-		<div class="login-holder">
-			<h2>Login</h2>
+<form id='login_form' action='process_login.php' method='post'>
 
-			<label class="inline" for="username">Username</label>
-			<input type="text" id="username" name="username" class="text-field" placeholder="Enter your username"/>
+	<div class="login-holder">
+		<h2>Login</h2>
 
-			<label class="inline" for="password">Password</label>
-			<input type="password" id="password" name="password" class="text-field" placeholder="Enter your password"/>
+		<label class="inline" for="username">Username</label>
+		<input type="text" id="username" name="username" class="text-field" placeholder="Enter your username"/>
 
-			<div class="error"  id="field_error">
-				One or more fields are not properly filled in!
-			</div>
+		<label class="inline" for="password">Password</label>
+		<input type="password" id="password" name="password" class="text-field" placeholder="Enter your password"/>
 
-			<div>
-				<input type="submit" id="login_submit" class="button" value="login"/>
-				<a href="signup.php">Need an account?</a>
-			</div>
-
+		<div class="error"  id="field_error">
+			One or more fields are not properly filled in!
 		</div>
 
-	</form>
-</div>
+		<div>
+			<input type="submit" id="login_submit" class="button" value="login"/>
+			<a href="signup.php">Need an account?</a>
+		</div>
+
+	</div>
+
+</form>
+
 <?php $layout->getLayout("footer"); ?>
 
 <script src="openrps_core/js/vendor/jquery-1.11.2.min.js"></script>

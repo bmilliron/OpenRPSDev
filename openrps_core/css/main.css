@@ -220,3 +220,10 @@ table tr th:last-child, table tr td:last-child{
 table tr:first-child{
     border-bottom: 2px solid #ddd;
 }
+
+footer{
+    margin: 0;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}

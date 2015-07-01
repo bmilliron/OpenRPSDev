@@ -4,7 +4,7 @@
 
 class Layout{
 	//this array holds all the founded layouts
-	private $layouts = [];
+	private $layouts;
 	private $layouts_path = "openrps_core/eng/partials/";
 
 	public function __construct(){

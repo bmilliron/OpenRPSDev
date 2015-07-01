@@ -19,7 +19,6 @@ $layout = new Layout();
 </head>
 <body class="dark-bg">
 	<?php $layout->getLayout("header_notloggedin"); ?>
-	<div class="three columns">
 
 	<form id='signup_form' action='process_signup.php' method='post'>
 
@@ -60,7 +59,8 @@ $layout = new Layout();
 
 		</div>
 	</form>
-	<div>
+	
+
 
 	<?php $layout->getLayout("footer"); ?>
 
