@@ -6,7 +6,7 @@ include_once 'openrps_core/eng/Db.php';
 
 //Set post variables
 
-$username = $_POST['username'];
+$username = htmlspecialchars($_POST['username'];
 $password = $_POST['password'];
 
 

@@ -7,7 +7,7 @@
     font-size: 16px;
     font-family: 'Karla';
     padding: 50px;
-    box-shadow: 0px 0px 15px grey;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     margin-top: 150px;
 }
 

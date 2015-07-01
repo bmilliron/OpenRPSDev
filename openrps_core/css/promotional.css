@@ -1,7 +1,8 @@
 .hero{
     height: 600px;
     background-image: url('../../img/hero.jpg');
-
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.5);
     /* Hero image will be an illustration by napalm*/
 }
 
@@ -24,4 +25,48 @@
 .dark-transparent-bg{
     background-color: rgba(20, 20, 20, 0.80) !important;
     padding: 6px;
+}
+
+.row{
+    padding: 50px 0;
+}
+
+.showcase-card{
+    text-align: center;
+    padding: 35px;
+    height: 560px;
+}
+
+.showcase-card img{
+    padding: 35px;
+}
+
+.showcase-card h4{
+    color: green;
+    font-size: 24px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.showcase-card p{
+    font-family: 'Karla';
+}
+
+.contribute-section{
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 150px;
+}
+
+.title{
+    margin: 0;
+    font-size: 42px;
+    background: #005b2e;
+    padding: 15px;
+    display: inline-block;
+    color: white;
+}
+
+.contribute-section div{
+    padding: 100px;
 }
