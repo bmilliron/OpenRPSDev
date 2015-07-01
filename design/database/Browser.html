@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+    <TITLE>JavaScript Tree Control</TITLE>
+    <STYLE>
+    body{
+        font: 10pt Verdana,sans-serif;
+        color: navy;
+    }
+    .trigger{
+        cursor: pointer;
+        cursor: hand;
+    }
+    .branch{
+        display: none;
+        margin-left: 16px;
+    }
+    </STYLE>
+    <SCRIPT language="JavaScript">
+    var openImg = new Image();
+    openImg.src = "Plus.png";
+    var closedImg = new Image();
+    closedImg.src = "Minus.png";
+    function showBranch(branch)
+    {
+        var objBranch = document.getElementById(branch).style;
+        if (objBranch.display=="block")
+            objBranch.display="none";
+        else
+            objBranch.display="block";
+    }
+    function swapFolder(img)
+    {
+        objImg = document.getElementById(img);
+        if (objImg.src.indexOf('Minus.png')>-1)
+            objImg.src = openImg.src;
+        else
+            objImg.src = closedImg.src;
+    }
+    </SCRIPT>
+</HEAD>
+<BODY>
+<div class="trigger" onclick="showBranch('branch4E20850');swapFolder('folder4E20850')">
+<A href="4E20850.html" TARGET=Main><img src="Plus.png" border="0" id="folder4E20850"><img src="PGModel.png" border=0></A>
+</div>
+<span class="branch" id="branch4E20850" style="display: none;">
+<A href="373AA78.html" TARGET=Main><img src="Blank16x16.png" border=0><img src="MVCContainer.png" border=0>Tables</A><br>
+<div class="trigger" onclick="showBranch('branch37D3778');swapFolder('folder37D3778')">
+<A href="37D3778.html" TARGET=Main><img src="Plus.png" border="0" id="folder37D3778"><img src="PGTableDerived.png" border=0>tb_users</A>
+</div>
+<span class="branch" id="branch37D3778" style="display: none;">
+<A href="4F5E190.html" TARGET=Main><img src="Blank16x16.png" border=0><img src="PGColumn.png" border=0>user_id</A><br>
+<A href="4F68480.html" TARGET=Main><img src="Blank16x16.png" border=0><img src="MVCContainer.png" border=0>Columns</A><br>
+<A href="4F5D038.html" TARGET=Main><img src="Blank16x16.png" border=0><img src="PGColumn.png" border=0>username</A><br>
+<A href="4F5D978.html" TARGET=Main><img src="Blank16x16.png" border=0><img src="PGColumn.png" border=0>password</A><br>
+<A href="4F5E9A8.html" TARGET=Main><img src="Blank16x16.png" border=0><img src="PGColumn.png" border=0>email</A><br>
+<A href="4F5ED20.html" TARGET=Main><img src="Blank16x16.png" border=0><img src="PGColumn.png" border=0>reg_date</A><br>
+</span>
+<A href="3739FE8.html" TARGET=Main><img src="Blank16x16.png" border=0><img src="MVCContainer.png" border=0>Inheritances</A><br>
+</span>
+</BODY>
+</HTML>
